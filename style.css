@@ -44,13 +44,18 @@ body{
     height:auto;
     margin-top:1rem;
 }
+.nav-button:hover{
+     background:linear-gradient(180deg, #8a5cff,rgb(245, 2, 225),yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .nav-button img{
     background: none;
 }
 .new{
     position: absolute;
-    top:11.7rem;
-    right: 32rem;
+    top:1rem;
+    right: 2.5rem;
     padding:0 5px;
     background-color: rgb(3, 243, 3);
     border-radius: 1rem;
@@ -79,7 +84,18 @@ justify-items:center;
 display: flex;
 background-position: center;
 background-size: cover;
+animation: mic 10s infinite;
+
 } 
+@keyframes mic{
+form{
+    transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+}
+}
+
 
 .banner-texts{
     justify-items: center;
@@ -96,6 +112,12 @@ background-size: cover;
 }
 .banner-button{
     margin-top: 1rem;
+}
+.button1:hover{
+     background:linear-gradient(180deg, #8a5cff,rgb(245, 2, 225),yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: navy;
 }
 .button1{
     background: linear-gradient(15deg, yellow,rgb(247, 5, 174), #8a5cff);
@@ -262,4 +284,31 @@ margin-top: 1rem;
     padding:.4rem;
     border-radius: 50%;
 }
-
+.footer-container{
+    background-image: url(./B13-A02-TechWave/assets/footer-bg.png);
+    background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    padding-top: 5rem;
+    text-align: center;
+    color:#ffffff;
+    padding-bottom: 5.3rem;
+}
+.footer-big-text{
+    font-size:3.5em;
+    padding-bottom: 1rem;
+}
+.footer-manu{
+    display:inline-flex;
+    gap:2rem;
+    color:gray;
+    margin-right:2.5rem;
+    padding-bottom: 2rem;
+}
+.footer-icon{
+    display: flex;
+    gap:0.5rem;
+}
+.last-text{
+    color:gray;
+}

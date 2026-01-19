@@ -1,7 +1,9 @@
 *{
     margin:0 auto;
-    background-color: rgb(23, 1, 44);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+     background-color: rgb(23, 1, 44);
 }
 .nav{
     display:flex;
@@ -9,6 +11,7 @@
     padding-top:1rem;
     border-bottom:0.1px solid rgba(128, 128, 128, 0.292);
     padding-bottom: 1.5rem;
+   
 }
 .nav-menu{
     display:flex;
@@ -44,32 +47,52 @@
 .nav-button img{
     background: none;
 }
-.banner-image{
-background-image:url(./B13-A02-TechWave/assets/hero-bg.png);
+.new{
+    position: absolute;
+    top:11.7rem;
+    right: 32rem;
+    padding:0 5px;
+    background-color: rgb(3, 243, 3);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 2px rgba(60, 194, 60, 0.555);
+}
+.main-banner{
+background: url(./B13-A02-TechWave/assets/hero-bg.png);
+padding-top:5rem;
 background-repeat: no-repeat;
-padding: 100px 120px;
 align-items:center;
 justify-items:center;
 display: flex;
-width:170vh;
 background-position: center;
 background-size: cover;
 }
-.banner-image img{
-    margin-bottom: 10rem;
-    padding: 8rem;
-    background:linear-gradient(45deg, yellow,rgb(247, 5, 174), #8a5cff);
-    border-radius:45% 45%;
-}
+.banner-image{
+   align-items: center;
+   margin-top: rem;
+   margin-bottom:17rem;
+   background: url(./B13-A02-TechWave/assets/hero-circle.png);
+   background-repeat: no-repeat;
+   width:300px;
+   height: 300px;;
+ align-items:center;
+justify-items:center;
+display: flex;
+background-position: center;
+background-size: cover;
+} 
+
 .banner-texts{
     justify-items: center;
+    position:absolute;
+    top:500px;
+    right:400px;
 }
 .banner-texts h1{
     font-size: 2.5rem;
     color:#ffffff;
 }
 .banner-texts p{
-    color:rgb(172, 164, 164)
+    color:rgb(172, 164, 164);
 }
 .banner-button{
     margin-top: 1rem;
@@ -94,7 +117,6 @@ background-size: cover;
 }
 .podcast-texts{
     text-align: center;
-    margin-top: 5rem;
     margin-bottom: 4rem;
 }
 .podcast-texts h1{
@@ -110,6 +132,7 @@ background-size: cover;
     margin-top: 1rem;
 }
 .rating{
+    
     display: flex;
     padding-top: 3rem;
     border-top: 0.1px solid rgb(44, 42, 42);
@@ -129,4 +152,43 @@ background-size: cover;
 .rating p{
 color:gray;
 margin-top: 1rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 210px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    color:#ffffff;
+}
+.card-1{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color:rgba(78, 78, 139, 0.313);
+    border-radius: 1rem;
+    padding:1rem;
+}
+.card-2{
+    grid-column: span 2 ;
+    grid-row: span 1;
+    background-color: rgba(78, 78, 139, 0.313);
+    border-radius: 1rem;
+    padding:1rem;
+
+}
+.card-4{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: rgba(78, 78, 139, 0.313);
+    border-radius: 1rem;
+    padding:1rem;
+
+}
+.grid p{
+    color:gray;
+}
+.grid-main-text{
+    justify-items: center;
+    color:#ffffff;
 }

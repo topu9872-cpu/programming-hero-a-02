@@ -213,7 +213,6 @@ margin-top: 1rem;
      color:#ffffff;
      gap:0.5rem;
      margin: 0  9rem;
-    
 }
 .box{
   background-color: rgba(78, 78, 139, 0.313) ;
@@ -224,6 +223,43 @@ margin-top: 1rem;
 .min{
     display:inline-flex;
     color: rgb(3, 243, 3);
-
+}
+.host-section h2{
+    text-align: center;
+    color:#ffffff;
+    margin-top: 2rem;
+    font-size:2.2rem;
+}
+.host{
+    display: flex;
+    background-color: rgba(25, 25, 119, 0.47) ;
+    margin:2rem 10rem;
+    padding:2rem;
+    border-radius: 2rem;
+}
+.host-container{
+    display: block;
+}
+.host-texts h3{
+    color:#ffffff;
+    margin-left: 2rem;
+    padding-top: 1.3rem;
+    font-size: x-large;
+    
+}
+.host-texts p{
+    color:rgb(159, 154, 154);
+    margin-left: 2.3rem;
+    padding-top: 1rem;
+}
+.icons{
+    display:inline-flex;
+    margin-top:1rem;
+    gap:1rem;
+}
+.icons img{
+    border:1px solid gray;
+    padding:.4rem;
+    border-radius: 50%;
 }
 

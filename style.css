@@ -5,6 +5,7 @@
 body{
      background-color: rgb(23, 1, 44);
 }
+/* nav section */
 .nav{
     display:flex;
     justify-content:space-between;
@@ -52,6 +53,10 @@ body{
 .nav-button img{
     background: none;
 }
+@media screen and (max-width:576px){
+    /* i couldn`t do anything in this line*/
+}
+/* banner section */
 .new{
     position: absolute;
     top:1rem;
@@ -84,8 +89,8 @@ justify-items:center;
 display: flex;
 background-position: center;
 background-size: cover;
-animation: mic 10s infinite;
-
+animation: mic 5s infinite;
+animation-delay:unset;
 } 
 @keyframes mic{
 form{
@@ -95,8 +100,6 @@ to{
     transform: rotate(360deg);
 }
 }
-
-
 .banner-texts{
     justify-items: center;
     position:absolute;
@@ -137,6 +140,12 @@ to{
 .button1 img{
     background: none;
 }
+@media screen and (max-width:576px){
+    .banner-texts{
+/* i couldn`t do anything in this line */
+    }
+}
+/* podcast section */
 .podcast-texts{
     text-align: center;
     margin-bottom: 4rem;
@@ -153,13 +162,16 @@ to{
 .text{
     margin-top: 1rem;
 }
+@media screen and (max-width:576px){
+    .podcast-texts{
+        margin:1rem auto
+    }
+}
 .rating{
     
     display: flex;
     padding-top: 3rem;
     border-top: 0.1px solid rgb(44, 42, 42);
-}
-.rating{
     text-align: center;
     margin:0 10rem;
     padding-bottom: 3rem;
@@ -176,10 +188,28 @@ to{
 color:gray;
 margin-top: 1rem;
 }
+@media screen and (max-width:576px){
+  .rating{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap:2rem 5rem;
+  }  
+  .rate{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .rating p{
+    display: flex;
+    white-space: nowrap;
+  }
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 210px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, 230px);
     gap: 10px;
     align-content: center;
     justify-content: center;
@@ -198,7 +228,6 @@ margin-top: 1rem;
     background-color: rgba(78, 78, 139, 0.313);
     border-radius: 1rem;
     padding:1rem;
-
 }
 .card-4{
     grid-column: span 1;
@@ -222,6 +251,19 @@ margin-top: 1rem;
 .grid-main h2{
     padding-bottom: 1rem;
 }
+@media screen and (max-width:576px){
+    .grid{
+        display:block;
+        flex-direction:column;
+        margin:0rem 6rem;
+        justify-content: center;
+    }
+    .card-1,.card-2,.card-4{
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+/* video section */
 .main-texts{
     text-align: center;
     padding-top: 3rem;
@@ -246,6 +288,23 @@ margin-top: 1rem;
     display:inline-flex;
     color: rgb(3, 243, 3);
 }
+@media screen and (max-width:576px){
+    .videos{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+    }
+    .box{
+        margin-bottom: 1rem;
+        margin-left:3rem;
+    }
+    .main-texts{
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+}
+/* host section */
 .host-section h2{
     text-align: center;
     color:#ffffff;
@@ -284,6 +343,16 @@ margin-top: 1rem;
     padding:.4rem;
     border-radius: 50%;
 }
+@media screen and (max-width:576px){
+    .host{
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+       flex-direction: column;
+       margin:0 6rem;
+    }
+}
+/* footer section */
 .footer-container{
     background-image: url(./B13-A02-TechWave/assets/footer-bg.png);
     background-size: cover;
@@ -311,4 +380,17 @@ margin-top: 1rem;
 }
 .last-text{
     color:gray;
+}
+@media screen and (max-width:576px){
+    .footer-manu{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-manu{
+        grid-column: span 2;
+        gap:2rem 0rem;
+    }
+    .footer-container{
+        margin-top: 2rem;
+    }
 }

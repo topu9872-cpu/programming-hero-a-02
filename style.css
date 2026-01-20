@@ -16,9 +16,10 @@ body{
 }
 .nav-menu{
     display:flex;
-    gap:1.5rem;
+    gap:2rem;
     color:#ffffff;
     margin-top:1rem;
+    margin-right: 15rem;
 }
 .nav-menu li:hover{
     background: gray;
@@ -54,7 +55,21 @@ body{
     background: none;
 }
 @media screen and (max-width:576px){
-    /* i couldn`t do anything in this line*/
+    .nav-menu,
+    .nav-button{
+        display:none;
+    }
+      .nav-menu{    background-image: url(./B13-A02-TechWave/assets/hamburger-menu.png);
+        width:1px;
+        background-size: contain;
+        display: block;
+        margin-right: 0px;
+background-repeat: no-repeat;
+color:transparent;
+      }
+   #big-text{
+    margin-left: 0px;
+   }
 }
 /* banner section */
 .new{
@@ -72,26 +87,32 @@ padding-top:5rem;
 background-repeat: no-repeat;
 align-items:center;
 justify-items:center;
-display: flex;
 background-position: center;
 background-size: cover;
 }
 .banner-image{
-   align-items: center;
-   margin-top: rem;
    margin-bottom:17rem;
    background: url(./B13-A02-TechWave/assets/hero-circle.png);
    background-repeat: no-repeat;
-   width:300px;
-   height: 300px;;
+   width:280px;
+   height: 280px;
  align-items:center;
-justify-items:center;
+ position: absolute;
 display: flex;
-background-position: center;
+margin:auto;
 background-size: cover;
-animation: mic 5s infinite;
-animation-delay:unset;
+animation: mic 7s infinite;
 } 
+@media screen and (max-width:576px){
+    .banner-image{
+    position: absolute;
+    top:19%;
+    }
+.banner-texts{
+    display:inline;
+    flex-direction: column;
+}
+}
 @keyframes mic{
 form{
     transform: rotate(0deg);
@@ -102,9 +123,10 @@ to{
 }
 .banner-texts{
     justify-items: center;
-    position:absolute;
-    top:500px;
-    right:400px;
+    margin-top: 20rem;
+    margin-right: 25rem;
+   padding-bottom:7rem ;
+    
 }
 .banner-texts h1{
     font-size: 2.5rem;
@@ -137,12 +159,19 @@ to{
      padding:0.4rem 1rem;
     border-radius:1.4rem;
 }
+.button2:hover{
+    background: none;
+}
 .button1 img{
     background: none;
 }
 @media screen and (max-width:576px){
     .banner-texts{
-/* i couldn`t do anything in this line */
+        display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+width:100%;
     }
 }
 /* podcast section */
@@ -255,7 +284,7 @@ margin-top: 1rem;
     .grid{
         display:block;
         flex-direction:column;
-        margin:0rem 6rem;
+        margin:0rem auto;
         justify-content: center;
     }
     .card-1,.card-2,.card-4{
@@ -283,6 +312,7 @@ margin-top: 1rem;
   border-radius: 1rem;
   width: 260px;
   padding:1rem;
+  padding-bottom: 9rem;
 }
 .min{
     display:inline-flex;
@@ -290,14 +320,21 @@ margin-top: 1rem;
 }
 @media screen and (max-width:576px){
     .videos{
-        display: block;
+        display: inline-block;
         justify-content: center;
         align-items: center;
         margin:0 auto;
     }
     .box{
-        margin-bottom: 1rem;
-        margin-left:3rem;
+       
+         justify-content: center;
+         width: 100%;
+         flex-direction: row;
+         border: 1px solid red;
+         margin:0 ;
+         padding:1rem;
+         gap:1rem;
+         margin-bottom: 1rem;
     }
     .main-texts{
         margin-bottom: 2rem;
@@ -348,8 +385,11 @@ margin-top: 1rem;
         display:inline-block;
         justify-content: center;
         align-items: center;
-       flex-direction: column;
-       margin:0 6rem;
+       margin:auto;
+       width: 520px;
+       height:100%;
+       text-align: center;
+       margin-top: 1rem;
     }
 }
 /* footer section */
@@ -391,6 +431,8 @@ margin-top: 1rem;
         gap:2rem 0rem;
     }
     .footer-container{
+        margin:auto;
         margin-top: 2rem;
+        width:100%;
     }
 }
